@@ -1,0 +1,13 @@
+<div class="main-block" *ngIf="user">
+  <div class="form-registration">
+    <h1 class="title">Registration</h1>
+    <form class="form-login">
+      <div><input [(ngModel)]="user.name" name="user.name" placeholder="Name" class="input-form"></div>
+      {{user.name}}
+        <div><input [(ngModel)]="user.email" name="user.email" placeholder="E-Mail adress" class="input-form"></div>
+        <div><input [(ngModel)]="user.password" name="user.password" placeholder="Password" class="input-form"></div>
+        <div><input [(ngModel)]="user.confirmedPassword" name="user.confirmedPassword" placeholder="Confirm password" class="input-form"></div>
+        <button (click)="sendData()" class="submit"> </button>
+    </form>
+  </div>
+</div>
